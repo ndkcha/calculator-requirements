@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\geometry{legalpaper, portrait, margin=1.2in}
+
+\title{SRS : Problem 1}
+\author{Anand Kacha (40047673)}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+\justifying
+A transcendental number is a real (or complex) number which is not an algebraic number. In other words, it can never solve a non-zero algebraic equation. (For example, if $x$ is a non-unit algebraic number ($x^2 \ne x$, which is similar to $x \ne 0 \ne 1$ ) and $y$ is another algebraic number but irrational number. then $x^y$ is transcendental number). Few examples of transcendental numbers are $\pi$, $e$, $2^{\sqrt{2}}$, etc.
+\begin{flushleft}
+\justifying
+One more example of the transcendental number is the Gelfond's constant which is $e^{\pi}$. Since the transcendental numbers exhibit the properties of infinite numbers, the value of Gelfond's constant approximated to 10 digits is $23.1406926327$
+\end{flushleft}
+
+\subsection{Calculation}
+\begin{flushleft}
+\justifying
+To calculate the value of Gelfond's constant, let's take $k_0 = \frac{1}{\sqrt{2}}$ and $k_{n+1} = \frac{1 - \sqrt{1 - k_n^2}}{1 + \sqrt{1 - k_n^2}}$ where $n$ is a positive number. The sequence generated when calculating $(\frac{4}{k_{n+1}})^{2^{-n}}$ rapidly converges to form the Gelfond's constant ($e^\pi$).
+\end{flushleft}
+
+\section{Properties}
+\begin{flushleft}
+\justifying
+The value of Gelfond's number is not finite. It does not have any visible pattern. The Gelfond's constant is a proof that the number (or series) produced by the algebraic power of two numbers that exhibit transcendence is also exhibits the properties of transcendence. The Gelfond's constant was introduced in order to solve the Hilbert's seventh problem. One unique property of the Gelfond's constant is that the value of the Gelfond's constant is exactly the same as volume of all unit balls (spheres) with even dimensions in Eucledian Space. The arithmetic operations such as (multiplications, power, multiplications in power, etc) with appropriate algebraic numbers on Gelfond's constant produces the almost integer numbers.
+\end{flushleft}
+
+\section{Applications}
+\begin{flushleft}
+\justifying
+It is useful when calculating the other constants that help figure the almost integer numbers (e.g. Ramanujan's constant, $e^{\pi} - \pi$, etc.). It is useful to calculate the volume of n-unit balls in Euclidean Space. Therefore, it can be used to calculate the region in n-class classification problems where each class has a unit value. 
+\end{flushleft}
+
+\section{References}
+\begin{itemize}
+  \item http://mathworld.wolfram.com/TranscendentalNumber.html
+  \item http://mathworld.wolfram.com/GelfondsConstant.html
+  \item http://mathworld.wolfram.com/HilbertsProblems.html
+  \item Wang, Xianfu (Dec 2005). "Volumes of Generalized Unit Balls". Mathematics Magazine. 8 (5): 390–395.
+\end{itemize}
+
+\end{document}
+
