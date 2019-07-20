@@ -16,6 +16,7 @@
 \maketitle
 
 \tableofcontents
+\listoffigures
 
 \clearpage
 
@@ -124,37 +125,55 @@ Shubham Bhagat is a PhD student researching organic semiconductors at Concordia 
 
 \section{Domain Model}
 \begin{center}
-    \includegraphics[scale=0.6]{images/n4-domain-model.png}
+    \begin{figure}[h]
+      \includegraphics[scale=0.56]{images/n4-domain-model.png}
+      \caption{The Domain Model of the Calculator system}
+    \end{figure}
 \end{center}
+\begin{flushleft}
+\textbf{Numbers} will contain all the digits. \newline
+\textbf{Special Numbers} will contain the special numbers like $\pi$, Gelfond's constant, and e.\newline
+\textbf{Arithmetic Operators} will contain list of all the arithmetic operators we can use for building the expression. For example, Add, Multiply, Subtract, Division.\newline
+\textbf{Logarithmic Operators} will contain the list of log operators we need for building the expression. For example, Log-base-10, Natural log, and Log-base-2.\newline
+\textbf{Trigonometric Operators} will contain the list of trigonometric operators we need for building the expression. For example, sin, cos, and tan.
+\end{flushleft}
 
 \clearpage
 
 \section{Use Case Model}
 \subsection{Use Cases}
 \begin{center}
-    \includegraphics[scale=0.45]{images/n4-use-case.png}
+    \begin{figure}[h!]
+      \includegraphics[scale=0.45]{images/n4-use-case.png}
+      \caption{The Use Case Model of the Calculator system}
+    \end{figure}
 \end{center}
 \begin{flushleft}
 Here are the sequence diagrams for these three cases.
 \end{flushleft}
 
-\subsection{Sequence for Basic Operations}
 \begin{center}
-    \includegraphics[scale=0.38]{images/n4-sequence-0.png}    
+    \begin{figure}[h!]
+      \includegraphics[scale=0.38]{images/n4-sequence-0.png}   
+      \caption{The sequence diagram describing the basic operations in the Calculator system}
+    \end{figure}
 \end{center}
 
-\subsection{Sequence for Almost Integer Numbers}
 \begin{center}
-    \includegraphics[scale=0.4]{images/n4-sequence-1.png}
+    \begin{figure}[h!]
+      \includegraphics[scale=0.4]{images/n4-sequence-1.png}
+      \caption{The sequence diagram describing the operations for Almost Integer Numbers in the Calculator system}
+    \end{figure}
 \end{center}
 
-\subsection{Sequence for n-ball}
 \begin{center}
-    \includegraphics[scale=0.4]{images/n4-sequence-2.png}
+    \begin{figure}[h!]
+      \includegraphics[scale=0.4]{images/n4-sequence-2.png}
+      \caption{The sequence diagram describing the calculations for volume of n-balls in the Calculator system}
+    \end{figure}
 \end{center}
 
-\subsection{Sequence for }
-
+\clearpage
 \subsection{Activity Model}
 \begin{center}
     \includegraphics[scale=0.37]{images/n4-activity-model.png}
