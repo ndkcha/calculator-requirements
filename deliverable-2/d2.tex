@@ -1,0 +1,199 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{pdfpages}
+\usepackage{biblatex}
+\geometry{portrait}
+
+\addbibresource{main.bib}
+
+\title{Scientific Calculator}
+\author{Anand Kacha (40047673)}
+
+\begin{document}
+
+\tableofcontents
+\listoftables
+
+\clearpage
+
+\section{User Stories}
+\begin{flushleft}
+\textbf{Note:} The reference point for the user story estimate is 13 points for 1 day.
+\end{flushleft}
+
+\subsection{Global Constraints}
+\begin{itemize}
+    \item The system takes the text based inputs from the command line console.
+    \item The system throws error on wrongly formatted input.
+\end{itemize}
+
+\subsection{User Stories}
+\begin{table}[h]
+\centering
+\begin{tabular}{|p{2.2cm}|p{12cm}|}
+\hline
+\textbf{Identifier} & {calc-us-001} \\
+\hline
+\textbf{Description} & {A user can calculate basic equations related to arithmetic operators.}\\
+\hline
+\textbf{Constraints} & 
+\begin{enumerate}
+    \item The user can use number pad to input the digits.
+    \item The user can use symbols to input the special constants.
+    \item The operations involve both numbers and symbols.
+\end{enumerate}\\
+\hline
+\textbf{Acceptance Tests} & 
+\begin{enumerate}
+    \item The user is able to perform arithmetic operations between two numbers.
+    \item The user is able to perform arithmetic operations between symbols.
+    \item The user is able to perform arithmetic operations amongst number and symbols.
+\end{enumerate}\\
+\hline
+\textbf{Priority} & {High}\\
+\hline
+\textbf{Estimate} & {5 points}\\
+\hline
+\end{tabular}
+\caption{User Story 1}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|p{2.2cm}|p{12cm}|}
+\hline
+\textbf{Identifier} & {calc-us-002} \\
+\hline
+\textbf{Description} & {A user can evaluate expressions with scientific operators.}\\
+\hline
+\textbf{Constraints} & 
+\begin{enumerate}
+    \item The user can combine two different kind of scientific operators.
+\end{enumerate}\\
+\hline
+\textbf{Acceptance Tests} & 
+\begin{enumerate}
+    \item The user is able to perform logarithmic and trigonometric operations.
+    \item The user is able to use arithmetic operators with scientific operators.
+\end{enumerate}\\
+\hline
+\textbf{Priority} & {Medium}\\
+\hline
+\textbf{Estimate} & {8 points}\\
+\hline
+\end{tabular}
+\caption{User Story 2}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|p{2.2cm}|p{12cm}|}
+\hline
+\textbf{Identifier} & {calc-us-003} \\
+\hline
+\textbf{Description} & {A user can evaluate an expression in order to process with variable data for his research.}\\
+\hline
+\textbf{Constraints} & 
+\begin{enumerate}
+    \item The expression can be the combination of arithmetic operations and logarithmic operations.
+    \item The expression may contain the Gelfond's constant.
+\end{enumerate}\\
+\hline
+\textbf{Acceptance Tests} & 
+\begin{enumerate}
+    \item The user is able to calculate the roots of an equation.
+\end{enumerate}\\
+\hline
+\textbf{Priority} & {Low}\\
+\hline
+\textbf{Estimate} & {13 points}\\
+\hline
+\end{tabular}
+\caption{User Story 3}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|p{2.2cm}|p{12cm}|}
+\hline
+\textbf{Identifier} & {calc-us-004} \\
+\hline
+\textbf{Description} & {A user can calculate the volume of n-ball sphere.}\\
+\hline
+\textbf{Constraints} & 
+\begin{enumerate}
+    \item The user will provide only the value of n.
+    \item The sphere will always be unit size. 
+\end{enumerate}\\
+\hline
+\textbf{Acceptance Tests} & 
+\begin{enumerate}
+    \item The user can validate the size of the balls to be unit.
+    \item The user can calculate the volume.
+\end{enumerate}\\
+\hline
+\textbf{Priority} & {Medium}\\
+\hline
+\textbf{Estimate} & {21 points}\\
+\hline
+\end{tabular}
+\caption{User Story 4}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|p{2.2cm}|p{12cm}|}
+\hline
+\textbf{Identifier} & {calc-us-005} \\
+\hline
+\textbf{Description} & {A user can derive almost integer numbers.}\\
+\hline
+\textbf{Constraints} & 
+\begin{enumerate}
+    \item The user can use only transcendental numbers in order to mix it with the Gelfond's constant.
+\end{enumerate}\\
+\hline
+\textbf{Acceptance Tests} & 
+\begin{enumerate}
+    \item The user should be able to generate Ramanujan's constant, $e^{\pi} - \pi$
+\end{enumerate}\\
+\hline
+\textbf{Priority} & {Medium}\\
+\hline
+\textbf{Estimate} & {13 points}\\
+\hline
+\end{tabular}
+\caption{User Story 5}
+\end{table}
+
+\clearpage
+\section{Backward Traceability Matrix}
+\subsection{Matrix}
+\begin{table}[h]
+\centering
+\begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{2.2cm}|}
+\hline
+\textbf{} & \textbf{Use Cases} & \textbf{Persona} & \textbf{Applications} \\
+\hline
+{calc-us-1} & {calc-uc-1} & {} & {}\\
+\hline
+{calc-us-2} & {calc-uc-1} & {1} & {}\\
+\hline
+{calc-us-3} & {calc-uc-1} & {} & {}\\
+\hline
+{calc-us-4} & {calc-uc-3} & {} & {1}\\
+\hline
+{calc-us-5} & {calc-uc-2} & {} & {1}\\
+\hline
+\end{tabular}
+\caption{Backward Traceability Matrix}
+\end{table}
+
+\subsection{Description}
+\justifying
+The first column represents the use case identifiers. The use case identifiers are addressed in the User Stories section.\newline \newline
+In the use cases column, \textbf{calc-uc-1} corresponds to "Evaluate Basic Expressions". \textbf{calc-uc-2} corresponds to "Calculate Almost Integer Number". \textbf{calc-uc-3} corresponds to "Calculate volume of u-unit balls"
+
+\end{document}
