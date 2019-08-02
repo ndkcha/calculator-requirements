@@ -61,10 +61,9 @@ public class Main {
         Calculation calculation = new Calculation();
         System.out.println("\nArithmetic Calculator\n");
         System.out.println("Hint: To use this part of calculator, you can input the expression in a single line and press return to have it evaluated");
-        System.out.println("The calculator all kinds of arithmetic operations (e.g. +, -, *, /)");
-        System.out.println("For example: 4+3+6*3 input will give the answer 25.");
-        System.out.println("The calculator also supports the parenthesis inside the expression.");
-        System.out.println("For example: (4+3+3)/5 input will give the answer 2");
+        System.out.println("The calculator arithmetic operations such as +, -, *, /");
+        System.out.println("The input must have only two operands and one operator.");
+        System.out.println("For example: 4+3 input will give the answer 7.");
         System.out.println("The calculator also supports symbols \"e\", \"pi\" and \"g\" (where g is Gelfond's constant)");
         System.out.println("Give \"exit\" as an input to quit");
         System.out.println("After the #, start inputting the expression\n");
@@ -83,9 +82,10 @@ public class Main {
             try {
                 input = calculation.replaceSymbols(input);
                 System.out.println("Result: " + calculation.evaluateExpression(input));
-            } catch (ScriptException e) {
+            } catch (Exception e) {
                 System.out.println("\nOops! There is something wrong in the input.");
-                System.out.println("You can input only linear expressions like 4+3+6*3 as an input.");
+                System.out.println("The input must have only two operands and one operator.");
+                System.out.println("You can input only linear expressions like 4+3 as an input.");
                 System.out.println("The input has to be the perfect expressions. for example, 4+5+ is not accepted.");
                 System.out.println("The calculator only supports symbols \"e\", \"pi\" and \"g\" (where g is Gelfond's constant)");
                 System.out.println("After the #, start inputting the expression\n");
